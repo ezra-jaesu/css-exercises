@@ -45,6 +45,6 @@ button {
     background: white;
     border: 1px solid #eee;
     /* Allowance for the border so 7px */
-    padding: 7px;
+    padding: 7px 24px;
     margin: 0px auto;
 }
