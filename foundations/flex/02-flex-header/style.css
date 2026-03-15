@@ -1,25 +1,70 @@
-.header  {
-  font-family: monospace;
-  background: papayawhip;
+.header {
+    font-family: "Times New Roman", Times, serif;
+    background: papayawhip;
 }
 
 .logo {
-  font-size: 48px;
-  font-weight: 900;
-  color: tomato;
-  background: white;
-  padding: 4px 32px;
+    font-size: 48px;
+    font-weight: 900;
+    color: tomato;
+    background: white;
+    padding: 4px 32px;
 }
 
 ul {
-  /* this removes the dots on the list items*/
-  list-style-type: none;
+    /* this removes the dots on the list items*/
+    list-style-type: none;
 }
 
 a {
-  font-size: 22px;
-  background: white;
-  padding: 8px;
-  /* this removes the line under the links */
-  text-decoration: none;
+    font-size: 22px;
+    background: white;
+    padding: 8px;
+    /* this removes the line under the links */
+    text-decoration: none;
+}
+
+/* I might actually contribute to this part of the TOP */
+/* NGL, I don't think UI/UX Design is for me. */
+/* I don't like how open-ended things could be. */
+
+/* Snippet for wide outcome */
+
+.logo {
+    font-size: 2em;
+}
+
+a {
+    font-size: 1em;
+}
+
+/* Snippet for narrow outcome*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header div {
+    flex: 0 0 0%;
+    padding: 0 1%;
+    margin: 1% 0;
+}
+
+ul {
+    display: flex;
+    gap: 3%;
+    margin: 0;
+    padding: 0;
+}
+
+div.right-links ul {
+    justify-content: flex-end;
+}
+
+ul li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
 }
