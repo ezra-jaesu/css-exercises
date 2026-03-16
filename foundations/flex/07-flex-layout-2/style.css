@@ -1,29 +1,84 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  margin: 0;
-  min-height: 100vh;
+    font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+        Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    margin: 0;
+    min-height: 100vh;
 }
 
 .header {
-  height: 72px;
-  background: darkmagenta;
-  color: white;
+    height: 72px;
+    background: darkmagenta;
+    color: white;
 }
 
 .footer {
-  height: 72px;
-  background: #eee;
-  color: darkmagenta;
+    height: 72px;
+    background: #eee;
+    color: darkmagenta;
 }
 
 .sidebar {
-  width: 300px;
-  background: royalblue;
-  box-sizing: border-box;
+    width: 300px;
+    background: royalblue;
+    box-sizing: border-box;
 }
 
 .card {
-  border: 1px solid #eee;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.06);
-  border-radius: 4px;
+    border: 1px solid #eee;
+    box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+}
+
+/* Manipulating CSS */
+
+#root {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+div.header {
+    padding: 10px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 24px;
+    flex: 0 0 30px;
+}
+
+div.content {
+    display: flex;
+    flex-grow: 1;
+}
+
+div.sidebar {
+    flex: 0 0 200px;
+}
+
+div.sidebar ul {
+    list-style-type: none;
+}
+
+div.card-container {
+    flex: 1 1 85%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2.5%;
+    padding-left: 2.5%;
+    padding-right: 7.5%;
+    align-content: space-evenly;
+}
+
+.card {
+    padding: 1%;
+    width: 200px;
+    padding: 1%;
+    font-size: 0.8em;
+}
+
+div.footer {
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+    height: fit-content;
 }
